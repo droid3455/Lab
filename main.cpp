@@ -40,28 +40,39 @@ bool PalindromoDe5(int num3){
 }
 
 int calcularFbo(int num){
+    int f0=0, f1=1, c=0, rpta=0;
+    if(num==0 ||num==1){
+        return 1;
+    }
+    else{
+        while(++c<num){
+            rpta=f0+f1;
+            f0=f1;
+            f1=rpta;
+        }
+        return rpta;
+    }
 
 }
+
 /*
 bool esNumero(char c)
 bool esLetra(char c)
 */
 int main(){
     /*
-
     int num;
     cin>>num;
     Separar5Cifras(num)
-
     */
 
     /*
-
     int contarnumero = contarDigitos(765432);
     cout<< contarnumero<< endl;
     return 0;
 
-    */
     cout<<PalindromoDe5(12121);
-
+    */
+    int calculate = calcularFbo(10);
+ cout<< calculate << endl;
 }
