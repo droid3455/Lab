@@ -59,6 +59,28 @@ int calcularFbo(int num){
 bool esNumero(char c)
 bool esLetra(char c)
 */
+
+int indicarNumero(char a){
+    int conv = static_cast<int>(a);
+    if(conv>=48 && conv<=57){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+}
+
+int indicarLetra(char l){
+    int aux1,aux2;
+    int con = static_cast<int>(l);
+    if(con>=65 && con<=122){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
 int main(){
     /*
     int num;
@@ -72,7 +94,15 @@ int main(){
     return 0;
 
     cout<<PalindromoDe5(12121);
-    */
+
     int calculate = calcularFbo(10);
- cout<< calculate << endl;
+    cout<< calculate << endl;
+
+
+    cout<< indicarNumero('5');
+
+    */
+    int Esletra = indicarLetra('d');
+    cout<< Esletra<<endl;
+
 }
